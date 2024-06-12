@@ -4,12 +4,18 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.pab2024klsa.informasiakademik.Home
+import com.pab2024klsa.informasiakademik.ListHomeAdapter
+import com.pab2024klsa.informasiakademik.R
 import com.pab2024klsa.informasiakademik.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
+
+    private lateinit var rvHome: RecyclerView
+    private val list = ArrayList<Home>()
 
     private var _binding: FragmentHomeBinding? = null
 
@@ -22,17 +28,45 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
-
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+        rvHome = binding.rvHome
+        rvHome.setHasFixedSize(true)
+
+        list.addAll(getlistHome())
+        showRecyclerList()
+
         return root
+    }
+
+    private fun getlistHome(): ArrayList<Home> {
+        val dataTitle = resources.getStringArray(R.array.data_title)
+        val dataDesc = resources.getStringArray(R.array.data_desc)
+
+        val listHome = ArrayList<Home>()
+        for (i in dataTitle.indices) {
+            val home = Home(dataTitle[i], dataDesc[i])
+            listHome.add(home)
+        }
+
+        return listHome
+    }
+
+    private fun showRecyclerList() {
+        rvHome.layoutManager = LinearLayoutManager(context)
+        val listHomeAdapter = ListHomeAdapter(list)
+        rvHome.adapter = listHomeAdapter
+
+//        listHomeAdapter.setOnItemClickCallback(object : ListHomeAdapter.OnItemClickCallback {
+//            override fun onItemClicked(data: College) {
+//                val intent = Intent(context, DetailActivity::class.java)
+//                intent.putExtra(DetailActivity.EXTRA_NAME, data.name)
+//                intent.putExtra(DetailActivity.EXTRA_DESC, data.fulldesc)
+//                intent.putExtra(DetailActivity.EXTRA_IMG, data.img)
+//                startActivity(intent)
+//            }
+//        })
     }
 
     override fun onDestroyView() {
