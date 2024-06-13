@@ -1,20 +1,20 @@
 package com.pab2024klsa.informasiakademik.ui.profile
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.pab2024klsa.informasiakademik.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
-
     private var _binding: FragmentProfileBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -22,17 +22,33 @@ class ProfileFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val profileViewModel =
-            ViewModelProvider(this).get(ProfileViewModel::class.java)
-
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        val view = binding.root
 
-        val textView: TextView = binding.textNotifications
-        profileViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        ViewCompat.setOnApplyWindowInsetsListener(view) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
         }
-        return root
+
+        binding.profileShare.setOnClickListener {
+            shareText()
+        }
+        return view
+    }
+
+    private fun shareText() {
+        // The text to share
+        val textToShare = "NAMA\nNIM\nPRODI\nFAKULTAS"
+
+        // Create the intent
+        val shareIntent = Intent(Intent.ACTION_SEND).apply {
+            type = "text/plain"
+            putExtra(Intent.EXTRA_TEXT, textToShare)
+        }
+
+        // Start the sharing activity
+        startActivity(Intent.createChooser(shareIntent, "Share via"))
     }
 
     override fun onDestroyView() {
