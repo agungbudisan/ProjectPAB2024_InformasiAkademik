@@ -7,8 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.pab2024klsa.informasiakademik.Home
-import com.pab2024klsa.informasiakademik.ListHomeAdapter
 import com.pab2024klsa.informasiakademik.R
 import com.pab2024klsa.informasiakademik.databinding.FragmentHomeBinding
 

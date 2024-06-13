@@ -1,10 +1,11 @@
-package com.pab2024klsa.informasiakademik
+package com.pab2024klsa.informasiakademik.ui.home
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.pab2024klsa.informasiakademik.R
 
 class ListHomeAdapter(private val listHome: ArrayList<Home>) : RecyclerView.Adapter<ListHomeAdapter.ListViewHolder>() {
 

@@ -1,4 +1,4 @@
-package com.pab2024klsa.informasiakademik
+package com.pab2024klsa.informasiakademik.ui.home
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
