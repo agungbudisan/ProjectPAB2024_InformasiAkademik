@@ -4,6 +4,11 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_profile">Profile</string>
     <string name="logo">logo</string>
+    <string name="share">Profil</string>
+    <string name="profile_name">NAMA</string>
+    <string name="profile_nim">NIM</string>
+    <string name="profile_prodi">PRODI</string>
+    <string name="profile_faculty">FAKULTAS</string>
     <string name="btn_title">Judul Tombol</string>
     <string name="btn_subtitle">Lihat Detail</string>
 
