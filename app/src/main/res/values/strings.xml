@@ -11,6 +11,12 @@
     <string name="profile_faculty">FAKULTAS</string>
     <string name="btn_title">Judul Tombol</string>
     <string name="btn_subtitle">Lihat Detail</string>
+    <string name="btn_keketatan">KEKETATAN</string>
+    <string name="btn_nilai_akademik">NILAI AKADEMIK</string>
+    <string name="btn_mahasiswa_aktif">MAHASISWA AKTIF</string>
+    <string name="btn_mahasiswa_kurang_mampu">MAHASISWA KURANG MAMPU</string>
+    <string name="btn_analisis_pembayaran">ANALISIS PEMBAYARAN</string>
+    <string name="btn_ace">ACE</string>
 
     <string-array name="data_title">
         <item>SINGLE SIGN ON (SSO) LOGIN</item>
