@@ -17,6 +17,58 @@
     <string name="btn_mahasiswa_kurang_mampu">MAHASISWA KURANG MAMPU</string>
     <string name="btn_analisis_pembayaran">ANALISIS PEMBAYARAN</string>
     <string name="btn_ace">ACE</string>
+    <string name="no">NO</string>
+    <string name="program_studi">PROGRAM STUDI</string>
+    <string name="akp">AKP</string>
+    <string name="_1">1</string>
+    <string name="farmasi">Farmasi</string>
+    <string name="_1_68">1:68</string>
+    <string name="_1_46">\n</string>
+    <string name="_1_46_">1:46</string>
+    <string name="informatika">Informatika</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_10">10</string>
+    <string name="kebidanan">Kebidanan</string>
+    <string name="_1_32">1:32</string>
+    <string name="psikologi">Psikologi</string>
+    <string name="_1_31">1:31</string>
+    <string name="sains_data">Sains Data</string>
+    <string name="kedokteran">Kedokteran</string>
+    <string name="_1_29">1:29</string>
+    <string name="teknik_industri">Teknik Industri</string>
+    <string name="_1_26">1:26</string>
+    <string name="ilmu_dan_teknologi_pangan">Ilmu dan Teknologi Pangan</string>
+    <string name="_1_24">1:24</string>
+    <string name="teknik_elektro">Teknik Elektro</string>
+    <string name="_1_22">1:22</string>
+    <string name="teknik_sipil">Teknik Sipil</string>
+    <string name="_1_21">1:21</string>
+    <string name="soshum">SOSHUM</string>
+    <string name="top_10_prodi_dengan_keketatan_tertinggi">TOP 10 PRODI DENGAN KEKETATAN TERTINGGI</string>
+    <string name="saintek">SAINTEK</string>
+    <string name="manajemen">Manajemen</string>
+    <string name="_1_49">1:49</string>
+    <string name="bisnis_digital">Bisnis Digital</string>
+    <string name="_1_44">1:44</string>
+    <string name="ilmu_komusikasi">Ilmu Komusikasi</string>
+    <string name="_1_42">1:42</string>
+    <string name="akutansi">Akutansi</string>
+    <string name="pgsd">PGSD</string>
+    <string name="_1_28">1:28</string>
+    <string name="bimbingan_dan_konseling">Bimbingan dan Konseling</string>
+    <string name="_1_45">1:45</string>
+    <string name="hubungan_internasional">Hubungan Internasional</string>
+    <string name="ilmu_administrasi_negara">Ilmu Administrasi Negara</string>
+    <string name="_1_23">1:23</string>
+    <string name="sastra_inggris">Sastra Inggris</string>
+    <string name="pendidikan_bahasa_inggris">Pendidikan Bahasa Inggris</string>
 
     <string-array name="data_title">
         <item>SINGLE SIGN ON (SSO) LOGIN</item>
@@ -38,4 +90,6 @@
         <item>ANALISIS PEMBAYARAN</item>
         <item>ACE</item>
     </string-array>
+
+
 </resources>

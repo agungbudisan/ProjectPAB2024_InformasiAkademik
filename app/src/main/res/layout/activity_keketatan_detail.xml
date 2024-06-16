@@ -11,7 +11,7 @@
         android:id="@+id/imageViewLogo"
         android:layout_width="95dp"
         android:layout_height="53dp"
-        android:contentDescription="@string/logo_uns"
+        android:contentDescription="@string/logo"
         android:src="@drawable/logo"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="23dp"
@@ -27,7 +27,7 @@
         android:background="@drawable/rounded_background"
         android:gravity="center"
         android:padding="16dp"
-        android:text="@string/top_10_nprodi_dengan_keketatan_tinggi"
+        android:text="@string/top_10_prodi_dengan_keketatan_tertinggi"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -76,7 +76,7 @@
         android:layout_width="372dp"
         android:layout_height="260dp"
         android:layout_marginStart="13dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -128,56 +128,56 @@
 
             <TableRow>
                 <TextView android:text="@string/_2" />
+                <TextView android:text="@string/informatika" />
+                <TextView android:text="@string/_1_46_" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="@string/_3" />
                 <TextView android:text="@string/kebidanan" />
-                <TextView android:text="@string/_1_51" />
+                <TextView android:text="@string/_1_32" />
             </TableRow>
 
             <TableRow>
-                <TextView android:text="@string/_3" />
-                <TextView android:text="@string/informatika" />
-                <TextView android:text="@string/_1_47" />
+                <TextView android:text="@string/_4" />
+                <TextView android:text="@string/psikologi" />
+                <TextView android:text="@string/_1_31" />
             </TableRow>
 
             <TableRow>
-                <TextView android:text="@string/_3" />
-                <TextView android:text="@string/informatika" />
-                <TextView android:text="@string/_1_47" />
+                <TextView android:text="@string/_5" />
+                <TextView android:text="@string/sains_data" />
+                <TextView android:text="@string/_1_31" />
             </TableRow>
 
             <TableRow>
-                <TextView android:text="@string/_3" />
-                <TextView android:text="@string/informatika" />
-                <TextView android:text="@string/_1_47" />
+                <TextView android:text="@string/_6" />
+                <TextView android:text="@string/kedokteran" />
+                <TextView android:text="@string/_1_29" />
             </TableRow>
 
             <TableRow>
-                <TextView android:text="@string/_3" />
-                <TextView android:text="@string/informatika" />
-                <TextView android:text="@string/_1_47" />
+                <TextView android:text="@string/_7" />
+                <TextView android:text="@string/teknik_industri" />
+                <TextView android:text="@string/_1_26" />
             </TableRow>
 
             <TableRow>
-                <TextView android:text="@string/_3" />
-                <TextView android:text="@string/informatika" />
-                <TextView android:text="@string/_1_47" />
+                <TextView android:text="@string/_8" />
+                <TextView android:text="@string/ilmu_dan_teknologi_pangan" />
+                <TextView android:text="@string/_1_24" />
             </TableRow>
 
             <TableRow>
-                <TextView android:text="@string/_3" />
-                <TextView android:text="@string/informatika" />
-                <TextView android:text="@string/_1_47" />
+                <TextView android:text="@string/_9" />
+                <TextView android:text="@string/teknik_elektro" />
+                <TextView android:text="@string/_1_22" />
             </TableRow>
 
             <TableRow>
-                <TextView android:text="@string/_3" />
-                <TextView android:text="@string/informatika" />
-                <TextView android:text="@string/_1_47" />
-            </TableRow>
-
-            <TableRow>
-                <TextView android:text="@string/_3" />
-                <TextView android:text="@string/informatika" />
-                <TextView android:text="@string/_1_47" />
+                <TextView android:text="@string/_10" />
+                <TextView android:text="@string/teknik_sipil" />
+                <TextView android:text="@string/_1_21" />
             </TableRow>
         </TableLayout>
     </LinearLayout>
@@ -211,7 +211,7 @@
         android:layout_width="372dp"
         android:layout_height="260dp"
         android:layout_marginStart="13dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -260,7 +260,7 @@
 
             <TableRow>
                 <TextView
-                    android:text="@string/_1_" />
+                    android:text="@string/_1" />
                 <TextView
                     android:text="@string/manajemen" />
                 <TextView
@@ -269,7 +269,7 @@
 
             <TableRow>
                 <TextView
-                    android:text="@string/_2_" />
+                    android:text="@string/_2" />
                 <TextView
                     android:text="@string/bisnis_digital" />
                 <TextView
@@ -278,72 +278,72 @@
 
             <TableRow>
                 <TextView
-                    android:text="@string/_3_" />
+                    android:text="@string/_3" />
                 <TextView
-                    android:text="@string/ilmu_komunikasi" />
-                <TextView
-                    android:text="@string/_1_42" />
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:text="@string/_1_" />
-                <TextView
-                    android:text="@string/manajemen" />
-                <TextView
-                    android:text="@string/_1_49" />
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:text="@string/_2_" />
-                <TextView
-                    android:text="@string/bisnis_digital" />
-                <TextView
-                    android:text="@string/_1_44" />
-            </TableRow>
-
-            <TableRow>
-                <TextView
-                    android:text="@string/_3_" />
-                <TextView
-                    android:text="@string/ilmu_komunikasi" />
+                    android:text="@string/ilmu_komusikasi" />
                 <TextView
                     android:text="@string/_1_42" />
             </TableRow>
 
             <TableRow>
                 <TextView
-                    android:text="@string/_1_" />
+                    android:text="@string/_4" />
                 <TextView
-                    android:text="@string/manajemen" />
+                    android:text="@string/akutansi" />
                 <TextView
-                    android:text="@string/_1_49" />
+                    android:text="@string/_1_32" />
             </TableRow>
 
             <TableRow>
                 <TextView
-                    android:text="@string/_2_" />
+                    android:text="@string/_5" />
                 <TextView
-                    android:text="@string/bisnis_digital" />
+                    android:text="@string/pgsd" />
                 <TextView
-                    android:text="@string/_1_44" />
+                    android:text="@string/_1_28" />
             </TableRow>
 
             <TableRow>
                 <TextView
-                    android:text="@string/_3_" />
+                    android:text="@string/_6" />
                 <TextView
-                    android:text="@string/ilmu_komunikasi" />
+                    android:text="@string/bimbingan_dan_konseling"/>
                 <TextView
-                    android:text="@string/_1_42" />
+                    android:text="@string/_1_45" />
             </TableRow>
 
             <TableRow>
                 <TextView
-                    android:text="@string/_3_" />
+                    android:text="@string/_7" />
                 <TextView
-                    android:text="@string/ilmu_komunikasi" />
+                    android:text="@string/hubungan_internasional" />
+                <TextView
+                    android:text="@string/_1_24" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/_8" />
+                <TextView
+                    android:text="@string/ilmu_administrasi_negara" />
+                <TextView
+                    android:text="@string/_1_23" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/_9" />
+                <TextView
+                    android:text="@string/sastra_inggris" />
+                <TextView
+                    android:text="@string/_1_23" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/_10" />
+                <TextView
+                    android:text="@string/pendidikan_bahasa_inggris" />
                 <TextView
                     android:text="@string/_1_42" />
             </TableRow>
