@@ -13,11 +13,10 @@
         android:layout_height="53dp"
         android:contentDescription="@string/logo"
         android:src="@drawable/logo"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="23dp"
-        tools:ignore="MissingConstraints"
-        />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"/>
 
     <!-- Saintek Section -->
     <TextView
@@ -43,7 +42,6 @@
         android:shadowDy="2"
         android:shadowRadius="1" />
 
-
     <TextView
         android:id="@+id/textViewSaintek"
         android:layout_width="0dp"
@@ -58,7 +56,6 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintMarginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewTitle"
         android:layout_marginStart="25dp"
@@ -69,8 +66,6 @@
         android:shadowRadius="1"/>
 
     <!-- Saintek Table -->
-
-    <!-- Soshum Section -->
     <LinearLayout
         android:id="@+id/tableSaintek"
         android:layout_width="372dp"
@@ -81,7 +76,6 @@
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintMarginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewSaintek">
 
@@ -196,7 +190,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tableSaintek"
-        app:layout_constraintMarginTop="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
         android:shadowColor="#80000000"
@@ -211,14 +205,13 @@
         android:layout_width="372dp"
         android:layout_height="260dp"
         android:layout_marginStart="13dp"
-        android:layout_marginTop="10dp"
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewSoshum"
-        app:layout_constraintMarginTop="8dp">
+        android:layout_marginTop="8dp">
 
         <TableLayout
             android:layout_width="match_parent"
