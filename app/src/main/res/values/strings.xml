@@ -16,7 +16,9 @@
     <string name="btn_mahasiswa_aktif">MAHASISWA AKTIF</string>
     <string name="btn_mahasiswa_kurang_mampu">MAHASISWA KURANG MAMPU</string>
     <string name="btn_analisis_pembayaran">ANALISIS PEMBAYARAN</string>
-    <string name="btn_ace">ACE</string>
+    <string name="analisis_pembayaran_title">ANALSIS PEMBAYARAN MAHASISWA</string>
+    <string name="data_pembayaran">DATA REKAPITULASI PEMBAYARAN MAHASISWA</string>
+    <string name="btn_ace">AEE</string>
     <string name="no">NO</string>
     <string name="program_studi">PROGRAM STUDI</string>
     <string name="akp">AKP</string>
