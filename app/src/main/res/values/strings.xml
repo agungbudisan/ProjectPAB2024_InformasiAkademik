@@ -71,6 +71,10 @@
     <string name="_1_23">1:23</string>
     <string name="sastra_inggris">Sastra Inggris</string>
     <string name="pendidikan_bahasa_inggris">Pendidikan Bahasa Inggris</string>
+    <string name="daftar_mahasiswa_aktif_title">DAFTAR MAHASISWA AKTIF</string>
+    <string name="daftar_mahasiswa_aktif_header">DATA REKAPITULASI MAHASISWA AKTIF</string>
+    <string name="subtitle">Fakultas</string>
+    <string name="mhs_aktif_title">Sekolah Vokasi</string>
 
     <string-array name="data_title">
         <item>SINGLE SIGN ON (SSO) LOGIN</item>
@@ -93,5 +97,22 @@
         <item>ACE</item>
     </string-array>
 
+    <string-array name="data_btn_mhs_aktif">
+        <item>SEKOLAH VOKASI</item>
+        <item>HUKUM</item>
+        <item>TEKNIK</item>
+        <item>PSIKOLOGI</item>
+        <item>PERTANIAN</item>
+        <item>PETERNAKAN</item>
+        <item>KEDOKTERAN</item>
+        <item>ILMU BUDAYA</item>
+        <item>KEOLAHRAGAAN</item>
+        <item>EKONOMI BISNIS</item>
+        <item>ILMU SOSIAL POLITIK</item>
+        <item>SENI RUPA dan DESAIN</item>
+        <item>KEGURUAN</item>
+        <item>TEKNOLOGI INFORMASI</item>
+        <item>MIPA</item>
+    </string-array>
 
 </resources>
