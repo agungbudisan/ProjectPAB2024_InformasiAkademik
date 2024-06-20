@@ -13,337 +13,349 @@
         android:layout_height="53dp"
         android:contentDescription="@string/logo"
         android:src="@drawable/logo"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="23dp"
-        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
         />
 
-
-    <!-- Saintek Section -->
-    <TextView
-        android:id="@+id/textViewTitle"
+    <ScrollView
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_background"
-        android:gravity="center"
-        android:padding="16dp"
-        android:text="@string/top_10_prodi_dengan_keketatan_tertinggi"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@id/imageViewLogo"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginTop="15dp"
-        android:shadowColor="#80000000"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="1" />
-
-
-    <TextView
-        android:id="@+id/textViewSaintek"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/rounded_blue_background"
-        android:gravity="center"
-        android:padding="8dp"
-        android:text="@string/saintek"
-        android:textColor="@android:color/white"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintMarginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        android:shadowColor="#80000000"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="1"/>
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <!-- Saintek Table -->
-    <LinearLayout
-        android:id="@+id/tableSaintek"
-        android:layout_width="372dp"
-        android:layout_height="260dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical"
-        android:padding="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewSaintek">
-
-        <TableLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:stretchColumns="1">
+            android:layout_height="wrap_content">
 
-            <TableRow>
-                <TextView
-                    android:layout_marginEnd="2dp"
-                    android:shadowColor="#80000000"
-                    android:shadowDx="2"
-                    android:shadowDy="2"
-                    android:shadowRadius="1"
-                    android:text="@string/no"
-                    android:textColor="@color/orange"
-                    android:textStyle="bold" />
+            <!-- Saintek Section -->
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_background"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/top_10_prodi_dengan_keketatan_tertinggi"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:shadowColor="#80000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="1" />
 
-                <TextView
-                    android:shadowColor="#80000000"
-                    android:shadowDx="2"
-                    android:shadowDy="2"
-                    android:shadowRadius="1"
-                    android:text="@string/program_studi"
-                    android:textColor="@color/orange"
-                    android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textViewSaintek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_blue_background"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/saintek"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:shadowColor="#80000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="1"/>
 
-                <TextView
-                    android:shadowColor="#80000000"
-                    android:shadowDx="2"
-                    android:shadowDy="2"
-                    android:shadowRadius="1"
-                    android:text="@string/akp"
-                    android:textColor="@color/orange"
-                    android:textStyle="bold" />
-            </TableRow>
+            <!-- Saintek Table -->
+            <LinearLayout
+                android:id="@+id/tableSaintek"
+                android:layout_width="372dp"
+                android:layout_height="260dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewSaintek">
 
-            <TableRow>
-                <TextView android:text="@string/_1" />
-                <TextView android:text="@string/farmasi" />
-                <TextView android:text="@string/_1_68" />
-            </TableRow>
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
 
-            <TableRow>
-                <TextView android:text="@string/_2" />
-                <TextView android:text="@string/informatika" />
-                <TextView android:text="@string/_1_46_" />
-            </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_marginEnd="2dp"
+                            android:shadowColor="#80000000"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="1"
+                            android:text="@string/no"
+                            android:textColor="@color/orange"
+                            android:textStyle="bold" />
 
-            <TableRow>
-                <TextView android:text="@string/_3" />
-                <TextView android:text="@string/kebidanan" />
-                <TextView android:text="@string/_1_32" />
-            </TableRow>
+                        <TextView
+                            android:shadowColor="#80000000"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="1"
+                            android:text="@string/program_studi"
+                            android:textColor="@color/orange"
+                            android:textStyle="bold" />
 
-            <TableRow>
-                <TextView android:text="@string/_4" />
-                <TextView android:text="@string/psikologi" />
-                <TextView android:text="@string/_1_31" />
-            </TableRow>
+                        <TextView
+                            android:shadowColor="#80000000"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="1"
+                            android:text="@string/akp"
+                            android:textColor="@color/orange"
+                            android:textStyle="bold" />
+                    </TableRow>
 
-            <TableRow>
-                <TextView android:text="@string/_5" />
-                <TextView android:text="@string/sains_data" />
-                <TextView android:text="@string/_1_31" />
-            </TableRow>
+                    <TableRow>
+                        <TextView android:text="@string/_1" />
+                        <TextView android:text="@string/farmasi" />
+                        <TextView android:text="@string/_1_68" />
+                    </TableRow>
 
-            <TableRow>
-                <TextView android:text="@string/_6" />
-                <TextView android:text="@string/kedokteran" />
-                <TextView android:text="@string/_1_29" />
-            </TableRow>
+                    <TableRow>
+                        <TextView android:text="@string/_2" />
+                        <TextView android:text="@string/informatika" />
+                        <TextView android:text="@string/_1_46_" />
+                    </TableRow>
 
-            <TableRow>
-                <TextView android:text="@string/_7" />
-                <TextView android:text="@string/teknik_industri" />
-                <TextView android:text="@string/_1_26" />
-            </TableRow>
+                    <TableRow>
+                        <TextView android:text="@string/_3" />
+                        <TextView android:text="@string/kebidanan" />
+                        <TextView android:text="@string/_1_32" />
+                    </TableRow>
 
-            <TableRow>
-                <TextView android:text="@string/_8" />
-                <TextView android:text="@string/ilmu_dan_teknologi_pangan" />
-                <TextView android:text="@string/_1_24" />
-            </TableRow>
+                    <TableRow>
+                        <TextView android:text="@string/_4" />
+                        <TextView android:text="@string/psikologi" />
+                        <TextView android:text="@string/_1_31" />
+                    </TableRow>
 
-            <TableRow>
-                <TextView android:text="@string/_9" />
-                <TextView android:text="@string/teknik_elektro" />
-                <TextView android:text="@string/_1_22" />
-            </TableRow>
+                    <TableRow>
+                        <TextView android:text="@string/_5" />
+                        <TextView android:text="@string/sains_data" />
+                        <TextView android:text="@string/_1_31" />
+                    </TableRow>
 
-            <TableRow>
-                <TextView android:text="@string/_10" />
-                <TextView android:text="@string/teknik_sipil" />
-                <TextView android:text="@string/_1_21" />
-            </TableRow>
-        </TableLayout>
-    </LinearLayout>
+                    <TableRow>
+                        <TextView android:text="@string/_6" />
+                        <TextView android:text="@string/kedokteran" />
+                        <TextView android:text="@string/_1_29" />
+                    </TableRow>
 
-    <TextView
-        android:id="@+id/textViewSoshum"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_orange_background"
-        android:gravity="center"
-        android:padding="8dp"
-        android:text="@string/soshum"
-        android:textColor="@android:color/white"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tableSaintek"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        android:shadowColor="#80000000"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="1"
-        android:radius="8dp" />
+                    <TableRow>
+                        <TextView android:text="@string/_7" />
+                        <TextView android:text="@string/teknik_industri" />
+                        <TextView android:text="@string/_1_26" />
+                    </TableRow>
 
-    <!-- Soshum Table -->
-    <LinearLayout
-        android:id="@+id/tableSoshum"
-        android:layout_width="372dp"
-        android:layout_height="260dp"
-        android:layout_marginStart="13dp"
-        android:orientation="vertical"
-        android:padding="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewSoshum"
-        android:layout_marginTop="8dp">
+                    <TableRow>
+                        <TextView android:text="@string/_8" />
+                        <TextView android:text="@string/ilmu_dan_teknologi_pangan" />
+                        <TextView android:text="@string/_1_24" />
+                    </TableRow>
 
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:stretchColumns="1">
+                    <TableRow>
+                        <TextView android:text="@string/_9" />
+                        <TextView android:text="@string/teknik_elektro" />
+                        <TextView android:text="@string/_1_22" />
+                    </TableRow>
 
-            <TableRow>
-                <TextView
-                    android:text="@string/no"
-                    android:textStyle="bold"
-                    android:textColor="@color/blue"
-                    android:layout_marginEnd="2dp"
-                    android:shadowColor="#80000000"
-                    android:shadowDx="2"
-                    android:shadowDy="2"
-                    android:shadowRadius="1"
-                    />
+                    <TableRow>
+                        <TextView android:text="@string/_10" />
+                        <TextView android:text="@string/teknik_sipil" />
+                        <TextView android:text="@string/_1_21" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
 
-                <TextView
-                    android:text="@string/program_studi"
-                    android:textStyle="bold"
-                    android:textColor="@color/blue"
-                    android:shadowColor="#80000000"
-                    android:shadowDx="2"
-                    android:shadowDy="2"
-                    android:shadowRadius="1"
-                    />
+            <TextView
+                android:id="@+id/textViewSoshum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_orange_background"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/soshum"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tableSaintek"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:shadowColor="#80000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:radius="8dp" />
 
-                <TextView
-                    android:text="@string/akp"
-                    android:textStyle="bold"
-                    android:textColor="@color/blue"
-                    android:shadowColor="#80000000"
-                    android:shadowDx="2"
-                    android:shadowDy="2"
-                    android:shadowRadius="1"
-                    />
-            </TableRow>
+            <!-- Soshum Table -->
+            <LinearLayout
+                android:id="@+id/tableSoshum"
+                android:layout_width="372dp"
+                android:layout_height="260dp"
+                android:layout_marginStart="13dp"
+                android:orientation="vertical"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewSoshum"
+                android:layout_marginTop="8dp">
 
-            <TableRow>
-                <TextView
-                    android:text="@string/_1" />
-                <TextView
-                    android:text="@string/manajemen" />
-                <TextView
-                    android:text="@string/_1_49" />
-            </TableRow>
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
 
-            <TableRow>
-                <TextView
-                    android:text="@string/_2" />
-                <TextView
-                    android:text="@string/bisnis_digital" />
-                <TextView
-                    android:text="@string/_1_44" />
-            </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="@string/no"
+                            android:textStyle="bold"
+                            android:textColor="@color/blue"
+                            android:layout_marginEnd="2dp"
+                            android:shadowColor="#80000000"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="1"
+                            />
 
-            <TableRow>
-                <TextView
-                    android:text="@string/_3" />
-                <TextView
-                    android:text="@string/ilmu_komusikasi" />
-                <TextView
-                    android:text="@string/_1_42" />
-            </TableRow>
+                        <TextView
+                            android:text="@string/program_studi"
+                            android:textStyle="bold"
+                            android:textColor="@color/blue"
+                            android:shadowColor="#80000000"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="1"
+                            />
 
-            <TableRow>
-                <TextView
-                    android:text="@string/_4" />
-                <TextView
-                    android:text="@string/akutansi" />
-                <TextView
-                    android:text="@string/_1_32" />
-            </TableRow>
+                        <TextView
+                            android:text="@string/akp"
+                            android:textStyle="bold"
+                            android:textColor="@color/blue"
+                            android:shadowColor="#80000000"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="1"
+                            />
+                    </TableRow>
 
-            <TableRow>
-                <TextView
-                    android:text="@string/_5" />
-                <TextView
-                    android:text="@string/pgsd" />
-                <TextView
-                    android:text="@string/_1_28" />
-            </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="@string/_1" />
+                        <TextView
+                            android:text="@string/manajemen" />
+                        <TextView
+                            android:text="@string/_1_49" />
+                    </TableRow>
 
-            <TableRow>
-                <TextView
-                    android:text="@string/_6" />
-                <TextView
-                    android:text="@string/bimbingan_dan_konseling"/>
-                <TextView
-                    android:text="@string/_1_45" />
-            </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="@string/_2" />
+                        <TextView
+                            android:text="@string/bisnis_digital" />
+                        <TextView
+                            android:text="@string/_1_44" />
+                    </TableRow>
 
-            <TableRow>
-                <TextView
-                    android:text="@string/_7" />
-                <TextView
-                    android:text="@string/hubungan_internasional" />
-                <TextView
-                    android:text="@string/_1_24" />
-            </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="@string/_3" />
+                        <TextView
+                            android:text="@string/ilmu_komusikasi" />
+                        <TextView
+                            android:text="@string/_1_42" />
+                    </TableRow>
 
-            <TableRow>
-                <TextView
-                    android:text="@string/_8" />
-                <TextView
-                    android:text="@string/ilmu_administrasi_negara" />
-                <TextView
-                    android:text="@string/_1_23" />
-            </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="@string/_4" />
+                        <TextView
+                            android:text="@string/akutansi" />
+                        <TextView
+                            android:text="@string/_1_32" />
+                    </TableRow>
 
-            <TableRow>
-                <TextView
-                    android:text="@string/_9" />
-                <TextView
-                    android:text="@string/sastra_inggris" />
-                <TextView
-                    android:text="@string/_1_23" />
-            </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="@string/_5" />
+                        <TextView
+                            android:text="@string/pgsd" />
+                        <TextView
+                            android:text="@string/_1_28" />
+                    </TableRow>
 
-            <TableRow>
-                <TextView
-                    android:text="@string/_10" />
-                <TextView
-                    android:text="@string/pendidikan_bahasa_inggris" />
-                <TextView
-                    android:text="@string/_1_42" />
-            </TableRow>
-        </TableLayout>
-    </LinearLayout>
+                    <TableRow>
+                        <TextView
+                            android:text="@string/_6" />
+                        <TextView
+                            android:text="@string/bimbingan_dan_konseling"/>
+                        <TextView
+                            android:text="@string/_1_45" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="@string/_7" />
+                        <TextView
+                            android:text="@string/hubungan_internasional" />
+                        <TextView
+                            android:text="@string/_1_24" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="@string/_8" />
+                        <TextView
+                            android:text="@string/ilmu_administrasi_negara" />
+                        <TextView
+                            android:text="@string/_1_23" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="@string/_9" />
+                        <TextView
+                            android:text="@string/sastra_inggris" />
+                        <TextView
+                            android:text="@string/_1_23" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="@string/_10" />
+                        <TextView
+                            android:text="@string/pendidikan_bahasa_inggris" />
+                        <TextView
+                            android:text="@string/_1_42" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
