@@ -9,11 +9,11 @@ import com.pab2024klsa.informasiakademik.R
 
 class ListHomeAdapter(private val listHome: ArrayList<Home>) : RecyclerView.Adapter<ListHomeAdapter.ListViewHolder>() {
 
+    private var onItemClickCallback: OnItemClickCallback? = null
+
     interface OnItemClickCallback {
         fun onItemClicked(data: Home)
     }
-
-    private var onItemClickCallback: OnItemClickCallback? = null
 
     fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback
