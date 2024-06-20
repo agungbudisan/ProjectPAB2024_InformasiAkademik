@@ -15,9 +15,9 @@
         <activity
             android:name=".ui.detail.MahasiswaKurangMampuActivity"
             android:exported="false" />
-        <activity
-            android:name=".ui.mahasiswaaktif.MahasiswaAktifActivity"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".ui.mahasiswaaktif.MahasiswaAktifActivity"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".ui.detail.PembayaranDetailActivity"
             android:exported="false" />
