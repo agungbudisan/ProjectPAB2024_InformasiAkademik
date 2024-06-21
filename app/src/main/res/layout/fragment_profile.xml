@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
-            android:text="Universitas Sebelas Maret"
+            android:text="@string/nama_kampus"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal"
-            android:text="Jl. Ir. Sutami No. 36A, Surakarta, Jawa Tengah, Indonesia"
+            android:text="@string/lokasi_kampus"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:gravity="center_horizontal"
-            android:text="Sejarah"
+            android:text="@string/sejarah"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -66,7 +66,7 @@
             android:id="@+id/text_sejarah"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Universitas Sebelas Maret didirikan pada tanggal 11 Maret 1976, sesuai dengan Keputusan Presiden Republik Indonesia Nomor 10 Tahun 1976. Nama 'Sebelas Maret' dipilih untuk mengenang hari berdirinya universitas ini."
+            android:text="@string/sejarah_kampus"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
@@ -76,7 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:gravity="center_horizontal"
-            android:text="Fakultas dan Program Studi"
+            android:text="@string/fakultas_dan_program_studi"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -86,7 +86,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="UNS menawarkan berbagai fakultas dan program studi, baik di jenjang sarjana (S1), magister (S2), maupun doktor (S3). Beberapa fakultas yang ada di UNS antara lain:\n- Fakultas Kedokteran\n- Fakultas Ekonomi dan Bisnis\n- Fakultas Hukum\n- Fakultas Ilmu Sosial dan Ilmu Politik\n- Fakultas Teknik\n- Fakultas Keguruan dan Ilmu Pendidikan\n- Fakultas Sastra dan Seni Rupa\n- Fakultas MIPA\n- Fakultas Pertanian\n- Fakultas Teknologi Informasi dan Sains Data"
+            android:text="@string/fakultas_kampus"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
@@ -96,7 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:gravity="center_horizontal"
-            android:text="Visi"
+            android:text="@string/visi"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -106,7 +106,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Menjadi pusat pengembangan ilmu pengetahuan, teknologi, dan seni yang unggul berlandaskan nilai-nilai luhur budaya nasional."
+            android:text="@string/visi_kampus"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
@@ -116,7 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:gravity="center_horizontal"
-            android:text="Misi"
+            android:text="@string/misi"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -126,7 +126,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="1. Menyelenggarakan pendidikan yang berkualitas untuk menghasilkan lulusan yang kompeten dan berdaya saing tinggi.\n2. Melakukan penelitian yang inovatif dan aplikatif untuk pengembangan ilmu pengetahuan, teknologi, dan seni.\n3. Mengabdikan ilmu pengetahuan, teknologi, dan seni untuk kesejahteraan masyarakat.\n4. Mewujudkan tata kelola universitas yang baik (good university governance)."
+            android:text="@string/misi_kampus"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
@@ -136,7 +136,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:gravity="center_horizontal"
-            android:text="Fasilitas"
+            android:text="@string/fasilitas"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -146,7 +146,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="UNS menyediakan berbagai fasilitas untuk mendukung kegiatan akademik dan non-akademik, di antaranya:\n- Perpustakaan\n- Laboratorium\n- Pusat Kegiatan Mahasiswa\n- Asrama Mahasiswa\n- Rumah Sakit Pendidikan\n- Pusat Olahraga\n- Pusat Bahasa"
+            android:text="@string/fasilitas_kampus"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
@@ -156,7 +156,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:gravity="center_horizontal"
-            android:text="Kegiatan dan Organisasi Mahasiswa"
+            android:text="@string/kegiatan_dan_organisasi_mahasiswa"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -166,7 +166,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="UNS memiliki banyak organisasi mahasiswa yang aktif dalam berbagai bidang seperti:\n- BEM (Badan Eksekutif Mahasiswa)\n- UKM (Unit Kegiatan Mahasiswa) seperti UKM Seni, UKM Olahraga, dan UKM Riset\n- HMJ (Himpunan Mahasiswa Jurusan)"
+            android:text="@string/kegiatan_kampus"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
@@ -176,7 +176,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:gravity="center_horizontal"
-            android:text="Kerjasama dan Jaringan"
+            android:text="@string/kerjasama_dan_jaringan"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -186,7 +186,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="UNS menjalin kerjasama dengan berbagai institusi, baik dalam negeri maupun luar negeri, dalam rangka pengembangan akademik, penelitian, dan pengabdian kepada masyarakat."
+            android:text="@string/kerjasama_kampus"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
@@ -196,7 +196,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:gravity="center_horizontal"
-            android:text="Kontak"
+            android:text="@string/kontak"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -206,8 +206,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Telepon: (0271) 646994\nEmail: info@uns.ac.id\nWebsite: www.uns.ac.id"
+            android:text="@string/call_center"
             android:textColor="@color/black"
+            android:layout_marginBottom="50dp"
             android:textSize="20sp" />
 
     </LinearLayout>
