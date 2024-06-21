@@ -17,8 +17,6 @@ class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -32,7 +30,9 @@ class HomeFragment : Fragment() {
         rvHome = binding.rvHome
         rvHome.setHasFixedSize(true)
 
-        list.addAll(getlistHome())
+        if (list.isEmpty()) {
+            list.addAll(getlistHome())
+        }
         showRecyclerList()
 
         return root

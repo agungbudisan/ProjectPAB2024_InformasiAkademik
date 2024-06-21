@@ -13,8 +13,11 @@
         android:theme="@style/Theme.InformasiAkademik"
         tools:targetApi="31">
         <activity
-            android:name=".ui.mahasiswaaktif.MahasiswaAktifActivity"
+            android:name=".ui.detail.MahasiswaKurangMampuActivity"
             android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".ui.mahasiswaaktif.MahasiswaAktifActivity"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".ui.detail.PembayaranDetailActivity"
             android:exported="false" />

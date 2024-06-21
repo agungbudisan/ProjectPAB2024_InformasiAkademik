@@ -16,7 +16,7 @@
     <string name="btn_mahasiswa_aktif">MAHASISWA AKTIF</string>
     <string name="btn_mahasiswa_kurang_mampu">MAHASISWA KURANG MAMPU</string>
     <string name="btn_analisis_pembayaran">ANALISIS PEMBAYARAN</string>
-    <string name="analisis_pembayaran_title">ANALSIS PEMBAYARAN MAHASISWA</string>
+    <string name="analisis_pembayaran_title">ANALISIS PEMBAYARAN MAHASISWA</string>
     <string name="data_pembayaran">DATA REKAPITULASI PEMBAYARAN MAHASISWA</string>
     <string name="btn_ace">AEE</string>
     <string name="no">NO</string>
@@ -73,6 +73,8 @@
     <string name="pendidikan_bahasa_inggris">Pendidikan Bahasa Inggris</string>
     <string name="daftar_mahasiswa_aktif_title">DAFTAR MAHASISWA AKTIF</string>
     <string name="daftar_mahasiswa_aktif_header">DATA REKAPITULASI MAHASISWA AKTIF</string>
+    <string name="mahasiswa_kurang_mampu_title">DAFTAR MAHASISWA KURANG MAMPU</string>
+    <string name="mahasiswa_kurang_mampu_header">DATA REAKAPITULASI MAHASISWA KURANG MAMPU</string>
     <string name="subtitle">Fakultas</string>
     <string name="mhs_aktif_title">Sekolah Vokasi</string>
     <string name="image">image</string>
@@ -97,7 +99,7 @@
         <item>MAHASISWA AKTIF</item>
         <item>MAHASISWA KURANG MAMPU</item>
         <item>ANALISIS PEMBAYARAN</item>
-        <item>ACE</item>
+        <item>AEE</item>
     </string-array>
 
     <string-array name="data_btn_mhs_aktif">
