@@ -17,7 +17,10 @@
     <string name="btn_mahasiswa_kurang_mampu">MAHASISWA KURANG MAMPU</string>
     <string name="btn_analisis_pembayaran">ANALISIS PEMBAYARAN</string>
     <string name="analisis_pembayaran_title">ANALISIS PEMBAYARAN MAHASISWA</string>
+    <string name="nilai_akademik_title">PERSENTASE NILAI AKADEMIK</string>
     <string name="data_pembayaran">DATA REKAPITULASI PEMBAYARAN MAHASISWA</string>
+    <string name="data_semester">GRAFIK RATA-RATA 10 SEMESTER TERAKHIR</string>
+    <string name="data_ipk">PERSENTASE RATA-RATA IPK 10 SEMESTER TERAKHIR</string>
     <string name="btn_ace">AEE</string>
     <string name="no">NO</string>
     <string name="program_studi">PROGRAM STUDI</string>
