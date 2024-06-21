@@ -75,6 +75,9 @@
     <string name="daftar_mahasiswa_aktif_header">DATA REKAPITULASI MAHASISWA AKTIF</string>
     <string name="subtitle">Fakultas</string>
     <string name="mhs_aktif_title">Sekolah Vokasi</string>
+    <string name="image">image</string>
+    <string name="universitas_sebelas_maret">Universitas Sebelas Maret</string>
+    <string name="lokasi">Lokasi: Jl. Ir. Sutami No. 36A, Surakarta, Jawa Tengah, Indonesia</string>
 
     <string-array name="data_title">
         <item>SINGLE SIGN ON (SSO) LOGIN</item>
@@ -114,5 +117,29 @@
         <item>TEKNOLOGI INFORMASI</item>
         <item>MIPA</item>
     </string-array>
+
+<!--    <string-array name="data_name">-->
+<!--        <item>Adidya Abimanyu</item>-->
+<!--        <item>Agung Budi Santoso</item>-->
+<!--        <item>Andrew Gustaya Kristiawan</item>-->
+<!--        <item>Annisa Syifaul Ummah</item>-->
+<!--        <item>Bani Rijal Barru Faza</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="data_nim">-->
+<!--        <item>L0122004</item>-->
+<!--        <item>L0122008</item>-->
+<!--        <item>L0122020</item>-->
+<!--        <item>L0122023</item>-->
+<!--        <item>L0122031</item>-->
+<!--    </string-array>-->
+
+<!--    <integer-array name="data_img">-->
+<!--        <item>@drawable/adid</item>-->
+<!--        <item>@drawable/logo</item>-->
+<!--        <item>@drawable/logo</item>-->
+<!--        <item>@drawable/logo</item>-->
+<!--        <item>@drawable/logo</item>-->
+<!--    </integer-array>-->
 
 </resources>
