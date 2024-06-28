@@ -2,6 +2,7 @@ package com.pab2024klsa.informasiakademik.ui.detail
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.pab2024klsa.informasiakademik.R
 import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.components.XAxis
@@ -10,40 +11,71 @@ import com.github.mikephil.charting.data.BarData
 import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
+import com.google.firebase.database.*
 
 class PembayaranDetailActivity : AppCompatActivity() {
+
+    private lateinit var barChart: BarChart
+    private lateinit var database: DatabaseReference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pembayaran_detail)
 
-        val barChart = findViewById<BarChart>(R.id.barChart)
+        barChart = findViewById(R.id.barChart)
 
-        // Dummy data
-        val entries = ArrayList<BarEntry>()
-        entries.add(BarEntry(0f, 30f))
-        entries.add(BarEntry(1f, 80f))
-        entries.add(BarEntry(2f, 60f))
-        entries.add(BarEntry(3f, 50f))
-        entries.add(BarEntry(4f, 70f))
-        entries.add(BarEntry(5f, 60f))
+        database = FirebaseDatabase.getInstance().reference.child("analisisPembayaran")
 
-        val barDataSet = BarDataSet(entries, "Data Set")
-        val barData = BarData(barDataSet)
-        barChart.data = barData
+        loadChartData()
+    }
 
-        val xAxis = barChart.xAxis
-        xAxis.position = XAxis.XAxisPosition.BOTTOM
-        xAxis.setDrawGridLines(false)
-        xAxis.valueFormatter = IndexAxisValueFormatter(arrayOf("Jan", "Feb", "Mar", "Apr", "May", "Jun"))
+    private fun loadChartData() {
+        database.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                Log.d("PembayaranDetail", "Data received from Firebase")
 
-        val leftAxis = barChart.axisLeft
-        leftAxis.setDrawGridLines(false)
+                val entries = ArrayList<BarEntry>()
+                val labels = ArrayList<String>()
 
-        val rightAxis = barChart.axisRight
-        rightAxis.setDrawGridLines(false)
-        rightAxis.isEnabled = false
+                var index = 0f
+                for (data in snapshot.children) {
+                    val value = data.getValue(Long::class.java) ?: 0L
+                    entries.add(BarEntry(index, value.toFloat()))
+                    labels.add(data.key ?: "Unknown")
+                    Log.d("PembayaranDetail", "Key: ${data.key}, Value: $value")
+                    index += 1f
+                }
 
-        barChart.description.isEnabled = false
-        barChart.animateY(1000)
+                if (entries.isEmpty()) {
+                    Log.w("PembayaranDetail", "No data entries found")
+                    return
+                }
+
+                val barDataSet = BarDataSet(entries, "Pembayaran")
+                val barData = BarData(barDataSet)
+                barChart.data = barData
+
+                val xAxis = barChart.xAxis
+                xAxis.position = XAxis.XAxisPosition.BOTTOM
+                xAxis.setDrawGridLines(false)
+                xAxis.valueFormatter = IndexAxisValueFormatter(labels)
+
+                val leftAxis = barChart.axisLeft
+                leftAxis.setDrawGridLines(false)
+
+                val rightAxis = barChart.axisRight
+                rightAxis.setDrawGridLines(false)
+                rightAxis.isEnabled = false
+
+                barChart.description.isEnabled = false
+                barChart.animateY(1000)
+                barChart.invalidate() // refresh chart
+                Log.d("PembayaranDetail", "Chart data set successfully")
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Log.e("PembayaranDetail", "Failed to read data", error.toException())
+            }
+        })
     }
 }
