@@ -109,15 +109,15 @@
     <string name="informasi_akademik">INFORMASI AKADEMIK</string>
 
     <string-array name="data_title">
-        <item>SINGLE SIGN ON (SSO) LOGIN</item>
-        <item>INTERGRASI DENGAN SISTEM SIAKAD</item>
+        <item>APLIKASI INFORMASI AKADEMIK</item>
+        <item>INTEGRASI DENGAN SISTEM SIAKAD</item>
         <item>INFORMASI DAN FITUR YANG UP TO DATE</item>
     </string-array>
 
     <string-array name="data_desc">
-        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</item>
-        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</item>
-        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</item>
+        <item>Aplikasi Informasi Akademik adalah aplikasi Android yang berisi informasi terkait akademik kampus, seperti data terkait kemahasiswaan, data pembayaran, dan lain-lain.</item>
+        <item>Tidak perlu lagi khawatir data akan berbeda antar sistem di UNS. Cari informasi data untuk keperluan laporan dan akreditasi pun akan lebih mudah dan cepat menggunakan EIS.</item>
+        <item>Sistem akan selalu kami kembangkan untuk memudahkan anda dalam pencarian informasi. Kirim saran dan masukkan anda untuk pengembangan sistem di UNS yang lebih baik.</item>
     </string-array>
 
     <string-array name="data_btn_title">

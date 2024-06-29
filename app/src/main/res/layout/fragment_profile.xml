@@ -1,215 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.profile.ProfileFragment">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="95dp"
+        android:layout_height="53dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp" />
 
-        <ImageView
-            android:layout_width="98sp"
-            android:layout_height="56sp"
-            android:layout_marginStart="27sp"
-            android:contentDescription="@string/logo"
-            android:src="@drawable/logo" />
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profile_image"
-            android:layout_width="350dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginBottom="32dp"
-            android:src="@drawable/unstower"
-            android:layout_gravity="center_horizontal"
-            app:civ_border_color="#FF000000"
-            app:civ_border_width="2dp" />
-
-        <TextView
-            android:id="@+id/text_name"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal"
-            android:text="@string/nama_kampus"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/rounded_white_background"
+            android:layout_margin="16dp"
+            android:elevation="8dp">
 
-        <TextView
-            android:id="@+id/text_lokasi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal"
-            android:text="@string/lokasi_kampus"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="32dp"
+                android:src="@drawable/unstower"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
 
-        <TextView
-            android:id="@+id/text_sejarah_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center_horizontal"
-            android:text="@string/sejarah"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/nama_kampus"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:id="@+id/text_sejarah"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/sejarah_kampus"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            <TextView
+                android:id="@+id/text_lokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/lokasi_kampus"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
 
-        <TextView
-            android:id="@+id/text_faculty_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center_horizontal"
-            android:text="@string/fakultas_dan_program_studi"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/text_sejarah_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/sejarah"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:id="@+id/text_faculty"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/fakultas_kampus"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            <TextView
+                android:id="@+id/text_sejarah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sejarah_kampus"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
 
-        <TextView
-            android:id="@+id/text_vision_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center_horizontal"
-            android:text="@string/visi"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/text_faculty_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/fakultas_dan_program_studi"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:id="@+id/text_vision"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/visi_kampus"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            <TextView
+                android:id="@+id/text_faculty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fakultas_kampus"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
 
-        <TextView
-            android:id="@+id/text_mission_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center_horizontal"
-            android:text="@string/misi"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/text_vision_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/visi"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:id="@+id/text_mission"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/misi_kampus"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            <TextView
+                android:id="@+id/text_vision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/visi_kampus"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
 
-        <TextView
-            android:id="@+id/text_facilities_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center_horizontal"
-            android:text="@string/fasilitas"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/text_mission_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/misi"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:id="@+id/text_facilities"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/fasilitas_kampus"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            <TextView
+                android:id="@+id/text_mission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/misi_kampus"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
 
-        <TextView
-            android:id="@+id/text_activities_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center_horizontal"
-            android:text="@string/kegiatan_dan_organisasi_mahasiswa"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/text_facilities_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/fasilitas"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:id="@+id/text_activities"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/kegiatan_kampus"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            <TextView
+                android:id="@+id/text_facilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fasilitas_kampus"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
 
-        <TextView
-            android:id="@+id/text_collaboration_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center_horizontal"
-            android:text="@string/kerjasama_dan_jaringan"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/text_activities_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/kegiatan_dan_organisasi_mahasiswa"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:id="@+id/text_collaboration"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/kerjasama_kampus"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            <TextView
+                android:id="@+id/text_activities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kegiatan_kampus"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
 
-        <TextView
-            android:id="@+id/text_contact_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center_horizontal"
-            android:text="@string/kontak"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/text_collaboration_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/kerjasama_dan_jaringan"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
 
-        <TextView
-            android:id="@+id/text_contact"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/call_center"
-            android:textColor="@color/black"
-            android:layout_marginBottom="50dp"
-            android:textSize="20sp" />
+            <TextView
+                android:id="@+id/text_collaboration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kerjasama_kampus"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
 
-    </LinearLayout>
-</ScrollView>
+            <TextView
+                android:id="@+id/text_contact_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/kontak"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/text_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/call_center"
+                android:textColor="@color/black"
+                android:layout_marginBottom="50dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
