@@ -19,10 +19,11 @@
     <string name="analisis_pembayaran_title">ANALISIS PEMBAYARAN MAHASISWA</string>
     <string name="nilai_akademik_title">PERSENTASE NILAI AKADEMIK</string>
     <string name="data_pembayaran">DATA REKAPITULASI PEMBAYARAN MAHASISWA</string>
+    <string name="jumlah_pembayaran">JUMLAH PEMBAYARAN MAHASISWA</string>
     <string name="data_semester">GRAFIK RATA-RATA 10 SEMESTER TERAKHIR</string>
     <string name="data_ipk">PERSENTASE RATA-RATA IPK 10 SEMESTER TERAKHIR</string>
     <string name="btn_ace">AEE</string>
-    <string name="no">NO</string>
+    <string name="no">NO.</string>
     <string name="program_studi">PROGRAM STUDI</string>
     <string name="akp">AKP</string>
     <string name="_1">1</string>
@@ -78,7 +79,7 @@
     <string name="daftar_mahasiswa_aktif_header">DATA REKAPITULASI MAHASISWA AKTIF</string>
     <string name="mahasiswa_kurang_mampu_title">DAFTAR MAHASISWA KURANG MAMPU</string>
     <string name="mahasiswa_kurang_mampu_header">DATA REAKAPITULASI MAHASISWA KURANG MAMPU</string>
-    <string name="subtitle">Fakultas</string>
+    <string name="fakultas">Fakultas</string>
     <string name="mhs_aktif_title">Sekolah Vokasi</string>
     <string name="image">image</string>
     <string name="universitas_sebelas_maret">Universitas Sebelas Maret</string>
@@ -101,6 +102,10 @@
     <string name="kerjasama_kampus">UNS menjalin kerjasama dengan berbagai institusi, baik dalam negeri maupun luar negeri, dalam rangka pengembangan akademik, penelitian, dan pengabdian kepada masyarakat.</string>
     <string name="kontak">Kontak</string>
     <string name="call_center">Telepon: (0271) 646994\nEmail: info@uns.ac.id\nWebsite: www.uns.ac.id</string>
+    <string name="tahun">Tahun</string>
+    <string name="semester">Semester</string>
+    <string name="nominal_bayar">Nominal Bayar</string>
+    <string name="lihat_detail">Lihat Detail</string>
 
     <string-array name="data_title">
         <item>SINGLE SIGN ON (SSO) LOGIN</item>
@@ -139,30 +144,31 @@
         <item>KEGURUAN</item>
         <item>TEKNOLOGI INFORMASI</item>
         <item>MIPA</item>
+        <item>PASCASARJANA</item>
     </string-array>
 
-<!--    <string-array name="data_name">-->
-<!--        <item>Adidya Abimanyu</item>-->
-<!--        <item>Agung Budi Santoso</item>-->
-<!--        <item>Andrew Gustaya Kristiawan</item>-->
-<!--        <item>Annisa Syifaul Ummah</item>-->
-<!--        <item>Bani Rijal Barru Faza</item>-->
-<!--    </string-array>-->
+    <!--    <string-array name="data_name">-->
+    <!--        <item>Adidya Abimanyu</item>-->
+    <!--        <item>Agung Budi Santoso</item>-->
+    <!--        <item>Andrew Gustaya Kristiawan</item>-->
+    <!--        <item>Annisa Syifaul Ummah</item>-->
+    <!--        <item>Bani Rijal Barru Faza</item>-->
+    <!--    </string-array>-->
 
-<!--    <string-array name="data_nim">-->
-<!--        <item>L0122004</item>-->
-<!--        <item>L0122008</item>-->
-<!--        <item>L0122020</item>-->
-<!--        <item>L0122023</item>-->
-<!--        <item>L0122031</item>-->
-<!--    </string-array>-->
+    <!--    <string-array name="data_nim">-->
+    <!--        <item>L0122004</item>-->
+    <!--        <item>L0122008</item>-->
+    <!--        <item>L0122020</item>-->
+    <!--        <item>L0122023</item>-->
+    <!--        <item>L0122031</item>-->
+    <!--    </string-array>-->
 
-<!--    <integer-array name="data_img">-->
-<!--        <item>@drawable/adid</item>-->
-<!--        <item>@drawable/logo</item>-->
-<!--        <item>@drawable/logo</item>-->
-<!--        <item>@drawable/logo</item>-->
-<!--        <item>@drawable/logo</item>-->
-<!--    </integer-array>-->
+    <!--    <integer-array name="data_img">-->
+    <!--        <item>@drawable/adid</item>-->
+    <!--        <item>@drawable/logo</item>-->
+    <!--        <item>@drawable/logo</item>-->
+    <!--        <item>@drawable/logo</item>-->
+    <!--        <item>@drawable/logo</item>-->
+    <!--    </integer-array>-->
 
 </resources>
