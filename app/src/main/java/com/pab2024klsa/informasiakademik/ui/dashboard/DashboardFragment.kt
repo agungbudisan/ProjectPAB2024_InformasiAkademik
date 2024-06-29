@@ -11,7 +11,7 @@ import com.pab2024klsa.informasiakademik.R
 import com.pab2024klsa.informasiakademik.ui.detail.KeketatanDetailActivity
 import com.pab2024klsa.informasiakademik.ui.detail.MahasiswaKurangMampuActivity
 import com.pab2024klsa.informasiakademik.ui.detail.NilaiAkademikActivity
-import com.pab2024klsa.informasiakademik.ui.detail.PembayaranDetailActivity
+import com.pab2024klsa.informasiakademik.ui.detail.AnalisisPembayaranActivity
 
 class DashboardFragment : Fragment() {
 
@@ -51,7 +51,7 @@ class DashboardFragment : Fragment() {
 //            findNavController().navigate(R.id.action_dashboardFragment_to_analisisPembayaranFragment)
 //        }
         view.findViewById<Button>(R.id.btn_analisis_pembayaran).setOnClickListener {
-            val intent = Intent(activity, PembayaranDetailActivity::class.java)
+            val intent = Intent(activity, AnalisisPembayaranActivity::class.java)
             startActivity(intent)
         }
 //
