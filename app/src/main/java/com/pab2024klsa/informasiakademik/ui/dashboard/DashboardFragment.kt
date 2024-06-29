@@ -27,9 +27,7 @@ class DashboardFragment : Fragment() {
             val intent = Intent(activity, KeketatanDetailActivity::class.java)
             startActivity(intent)
         }
-//        view.findViewById<Button>(R.id.btn_nilai_akademik).setOnClickListener {
-//            findNavController().navigate(R.id.action_dashboardFragment_to_nilaiAkademikFragment)
-//        }
+
         view.findViewById<Button>(R.id.btn_nilai_akademik).setOnClickListener {
             val intent = Intent(activity, NilaiAkademikActivity::class.java)
             startActivity(intent)
@@ -38,26 +36,16 @@ class DashboardFragment : Fragment() {
 //        view.findViewById<Button>(R.id.btn_mahasiswa_aktif).setOnClickListener {
 //            findNavController().navigate(R.id.action_dashboardFragment_to_mahasiswaAktifFragment)
 //        }
-//
-//        view.findViewById<Button>(R.id.btn_mahasiswa_kurang_mampu).setOnClickListener {
-//            findNavController().navigate(R.id.action_dashboardFragment_to_mahasiswaKurangMampuFragment)
-//        }
+
         view.findViewById<Button>(R.id.btn_mahasiswa_kurang_mampu).setOnClickListener {
             val intent = Intent(activity, MahasiswaKurangMampuActivity::class.java)
             startActivity(intent)
         }
-//
-//        view.findViewById<Button>(R.id.btn_analisis_pembayaran).setOnClickListener {
-//            findNavController().navigate(R.id.action_dashboardFragment_to_analisisPembayaranFragment)
-//        }
+
         view.findViewById<Button>(R.id.btn_analisis_pembayaran).setOnClickListener {
             val intent = Intent(activity, AnalisisPembayaranActivity::class.java)
             startActivity(intent)
         }
-//
-//        view.findViewById<Button>(R.id.btn_ace).setOnClickListener {
-//            findNavController().navigate(R.id.action_dashboardFragment_to_aceFragment)
-//        }
 
         return view
     }

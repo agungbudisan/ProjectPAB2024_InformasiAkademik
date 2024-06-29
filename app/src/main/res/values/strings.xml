@@ -106,6 +106,7 @@
     <string name="semester">Semester</string>
     <string name="nominal_bayar">Nominal Bayar</string>
     <string name="lihat_detail">Lihat Detail</string>
+    <string name="informasi_akademik">INFORMASI AKADEMIK</string>
 
     <string-array name="data_title">
         <item>SINGLE SIGN ON (SSO) LOGIN</item>
