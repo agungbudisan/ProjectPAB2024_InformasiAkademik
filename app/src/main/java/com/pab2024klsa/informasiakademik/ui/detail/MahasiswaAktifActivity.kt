@@ -1,9 +1,7 @@
 package com.pab2024klsa.informasiakademik.ui.detail
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.components.XAxis
@@ -17,7 +15,7 @@ import com.pab2024klsa.informasiakademik.R
 class MahasiswaAktifActivity : AppCompatActivity() {
     private lateinit var barChartMhsAktif: BarChart
     private lateinit var database: DatabaseReference
-    private lateinit var btnLihatDetail: Button
+//    private lateinit var btnLihatDetail: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,11 +26,6 @@ class MahasiswaAktifActivity : AppCompatActivity() {
         database = FirebaseDatabase.getInstance().reference.child("MahasiswaAktif")
 
         loadChartData()
-
-        btnLihatDetail.setOnClickListener {
-            val intent = Intent(this, DetailMhsAktifActivity::class.java)
-            startActivity(intent)
-        }
     }
 
     private fun loadChartData() {
