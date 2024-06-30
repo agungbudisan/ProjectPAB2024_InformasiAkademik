@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "28399650478",
+    "firebase_url": "https://informasiakademik-pab2024a-default-rtdb.firebaseio.com",
+    "project_id": "informasiakademik-pab2024a",
+    "storage_bucket": "informasiakademik-pab2024a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28399650478:android:2017cfc2a42007500e4f3f",
+        "android_client_info": {
+          "package_name": "com.pab2024klsa.informasiakademik"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjA2S7hfKRVyZVq9Y75ylizpbIuHqsd0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
