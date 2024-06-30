@@ -102,9 +102,9 @@
     <string name="kerjasama_kampus">UNS menjalin kerjasama dengan berbagai institusi, baik dalam negeri maupun luar negeri, dalam rangka pengembangan akademik, penelitian, dan pengabdian kepada masyarakat.</string>
     <string name="kontak">Kontak</string>
     <string name="call_center">Telepon: (0271) 646994\nEmail: info@uns.ac.id\nWebsite: www.uns.ac.id</string>
-    <string name="tahun">Tahun</string>
-    <string name="semester">Semester</string>
-    <string name="nominal_bayar">Nominal Bayar</string>
+    <string name="tahun">TAHUN</string>
+    <string name="semester">SEMESTER</string>
+    <string name="nominal_bayar">NOMINAL BAYAR</string>
     <string name="lihat_detail">Lihat Detail</string>
     <string name="informasi_akademik">INFORMASI AKADEMIK</string>
 
@@ -130,6 +130,27 @@
     </string-array>
 
     <string-array name="data_btn_mhs_aktif">
+        <item>ALL</item>
+        <item>SEKOLAH VOKASI</item>
+        <item>HUKUM</item>
+        <item>TEKNIK</item>
+        <item>PSIKOLOGI</item>
+        <item>PERTANIAN</item>
+        <item>PETERNAKAN</item>
+        <item>KEDOKTERAN</item>
+        <item>ILMU BUDAYA</item>
+        <item>KEOLAHRAGAAN</item>
+        <item>EKONOMI BISNIS</item>
+        <item>ILMU SOSIAL POLITIK</item>
+        <item>SENI RUPA dan DESAIN</item>
+        <item>KEGURUAN</item>
+        <item>TEKNOLOGI INFORMASI</item>
+        <item>MIPA</item>
+        <item>PASCASARJANA</item>
+    </string-array>
+
+    <string-array name="fakultas">
+        <item>ALL</item>
         <item>SEKOLAH VOKASI</item>
         <item>HUKUM</item>
         <item>TEKNIK</item>

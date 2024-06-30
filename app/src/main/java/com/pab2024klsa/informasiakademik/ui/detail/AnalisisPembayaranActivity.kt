@@ -1,11 +1,14 @@
 package com.pab2024klsa.informasiakademik.ui.detail
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.Button
-import com.pab2024klsa.informasiakademik.R
+import android.widget.Spinner
+import androidx.appcompat.app.AppCompatActivity
 import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.data.BarData
@@ -13,12 +16,14 @@ import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
 import com.google.firebase.database.*
+import com.pab2024klsa.informasiakademik.R
 
 class AnalisisPembayaranActivity : AppCompatActivity() {
 
     private lateinit var barChart: BarChart
     private lateinit var database: DatabaseReference
     private lateinit var buttonLihatDetail: Button
+    private lateinit var spinnerFakultas: Spinner
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,10 +31,11 @@ class AnalisisPembayaranActivity : AppCompatActivity() {
 
         barChart = findViewById(R.id.barChart)
         buttonLihatDetail = findViewById(R.id.buttonLihatDetail)
+        spinnerFakultas = findViewById(R.id.spinnerFakultas)
 
         database = FirebaseDatabase.getInstance().reference.child("analisisPembayaran")
 
-        loadChartData()
+        setupSpinner()
 
         buttonLihatDetail.setOnClickListener {
             val intent = Intent(this, DetailPembayaranActivity::class.java)
@@ -37,10 +43,29 @@ class AnalisisPembayaranActivity : AppCompatActivity() {
         }
     }
 
-    private fun loadChartData() {
-        database.addValueEventListener(object : ValueEventListener {
+    private fun setupSpinner() {
+        val fakultasArray = resources.getStringArray(R.array.fakultas)
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, fakultasArray)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinnerFakultas.adapter = adapter
+
+        spinnerFakultas.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
+                val selectedFakultas = parent.getItemAtPosition(position) as String
+                Log.d("AnalisisPembayaran", "Selected Fakultas: $selectedFakultas")
+                loadChartData(selectedFakultas)
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>) {
+                // Do nothing here
+            }
+        }
+    }
+
+    private fun loadChartData(fakultas: String) {
+        database.child(fakultas).addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                Log.d("AnalisisPembayaran", "Data received from Firebase")
+                Log.d("AnalisisPembayaran", "Data received from Firebase for fakultas: $fakultas")
 
                 val entries = ArrayList<BarEntry>()
                 val labels = ArrayList<String>()
@@ -55,7 +80,9 @@ class AnalisisPembayaranActivity : AppCompatActivity() {
                 }
 
                 if (entries.isEmpty()) {
-                    Log.w("AnalisisPembayaran", "No data entries found")
+                    Log.w("AnalisisPembayaran", "No data entries found for fakultas: $fakultas")
+                    barChart.clear()
+                    barChart.invalidate()
                     return
                 }
 
@@ -78,7 +105,7 @@ class AnalisisPembayaranActivity : AppCompatActivity() {
                 barChart.description.isEnabled = false
                 barChart.animateY(1000)
                 barChart.invalidate() // refresh chart
-                Log.d("AnalisisPembayaran", "Chart data set successfully")
+                Log.d("AnalisisPembayaran", "Chart data set successfully for fakultas: $fakultas")
             }
 
             override fun onCancelled(error: DatabaseError) {
