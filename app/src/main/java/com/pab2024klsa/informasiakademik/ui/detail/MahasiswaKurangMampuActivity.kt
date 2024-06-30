@@ -75,9 +75,12 @@ class MahasiswaKurangMampuActivity : AppCompatActivity() {
 
                 var index = 0f
                 for (data in snapshot.children) {
+                    val year = data.child("col_1").getValue(String::class.java) ?: "Unknown"
+                    val jenjang = data.child("col_2").getValue(String::class.java) ?: "Unknown"
+                    val gol = data.child("col_3").getValue(String::class.java) ?: "Unknown"
                     val value = data.child("col_4").getValue(String::class.java)?.toFloat() ?: 0f
+
                     entries.add(BarEntry(index, value))
-                    labels.add(data.child("col_1").getValue(String::class.java) ?: "Unknown")
                     Log.d("MahasiswaKurangMampu", "Key: ${data.key}, Value: $value")
                     index += 1f
                 }
@@ -87,7 +90,7 @@ class MahasiswaKurangMampuActivity : AppCompatActivity() {
                     return
                 }
 
-                val barDataSet = BarDataSet(entries, "Tahun")
+                val barDataSet = BarDataSet(entries, "Jumlah Mahasiswa")
                 val barData = BarData(barDataSet)
                 barChart.data = barData
 
@@ -95,6 +98,10 @@ class MahasiswaKurangMampuActivity : AppCompatActivity() {
                 xAxis.position = XAxis.XAxisPosition.BOTTOM
                 xAxis.setDrawGridLines(false)
                 xAxis.valueFormatter = IndexAxisValueFormatter(labels)
+                xAxis.textSize = 10f // Increase the text size
+                xAxis.labelRotationAngle = 0f // Remove rotation
+                xAxis.granularity = 1f
+                xAxis.isGranularityEnabled = true
 
                 val leftAxis = barChart.axisLeft
                 leftAxis.setDrawGridLines(false)
@@ -104,6 +111,7 @@ class MahasiswaKurangMampuActivity : AppCompatActivity() {
                 rightAxis.isEnabled = false
 
                 barChart.description.isEnabled = false
+                barChart.setExtraOffsets(10f, 10f, 10f, 20f) // Add margin to the bottom
                 barChart.animateY(1000)
                 barChart.invalidate() // refresh chart
                 Log.d("MahasiswaKurangMampu", "Chart data set successfully")
