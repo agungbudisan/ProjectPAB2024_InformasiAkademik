@@ -12,6 +12,7 @@ import com.pab2024klsa.informasiakademik.ui.detail.KeketatanDetailActivity
 import com.pab2024klsa.informasiakademik.ui.detail.MahasiswaKurangMampuActivity
 import com.pab2024klsa.informasiakademik.ui.detail.NilaiAkademikActivity
 import com.pab2024klsa.informasiakademik.ui.detail.AnalisisPembayaranActivity
+import com.pab2024klsa.informasiakademik.ui.detail.MahasiswaAktifActivity
 
 class DashboardFragment : Fragment() {
 
@@ -32,10 +33,11 @@ class DashboardFragment : Fragment() {
             val intent = Intent(activity, NilaiAkademikActivity::class.java)
             startActivity(intent)
         }
-//
-//        view.findViewById<Button>(R.id.btn_mahasiswa_aktif).setOnClickListener {
-//            findNavController().navigate(R.id.action_dashboardFragment_to_mahasiswaAktifFragment)
-//        }
+
+        view.findViewById<Button>(R.id.btn_mahasiswa_aktif).setOnClickListener {
+            val intent = Intent(activity, MahasiswaAktifActivity::class.java)
+            startActivity(intent)
+        }
 
         view.findViewById<Button>(R.id.btn_mahasiswa_kurang_mampu).setOnClickListener {
             val intent = Intent(activity, MahasiswaKurangMampuActivity::class.java)
