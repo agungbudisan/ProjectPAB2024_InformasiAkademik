@@ -150,23 +150,23 @@
     </string-array>
 
     <string-array name="fakultas">
-        <item>ALL</item>
-        <item>SEKOLAH VOKASI</item>
-        <item>HUKUM</item>
-        <item>TEKNIK</item>
-        <item>PSIKOLOGI</item>
-        <item>PERTANIAN</item>
-        <item>PETERNAKAN</item>
-        <item>KEDOKTERAN</item>
-        <item>ILMU BUDAYA</item>
-        <item>KEOLAHRAGAAN</item>
-        <item>EKONOMI BISNIS</item>
-        <item>ILMU SOSIAL POLITIK</item>
-        <item>SENI RUPA dan DESAIN</item>
-        <item>KEGURUAN</item>
-        <item>TEKNOLOGI INFORMASI</item>
-        <item>MIPA</item>
-        <item>PASCASARJANA</item>
+        <item>All</item>
+        <item>SV</item>
+        <item>FH</item>
+        <item>FT</item>
+        <item>Fapsi</item>
+        <item>FP</item>
+        <item>Fapet</item>
+        <item>FK</item>
+        <item>FIB</item>
+        <item>FKOR</item>
+        <item>FEB</item>
+        <item>FISIP</item>
+        <item>FSRD</item>
+        <item>FKIP</item>
+        <item>Fatisda</item>
+        <item>FMIPA</item>
+        <item>Pascasarjana</item>
     </string-array>
 
     <!--    <string-array name="data_name">-->
