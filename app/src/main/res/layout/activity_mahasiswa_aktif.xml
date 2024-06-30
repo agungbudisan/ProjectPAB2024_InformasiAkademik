@@ -88,7 +88,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/btn_detailMhsAktif"
+        android:text="@string/btn_mahasiswa_aktif"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="25dp"/>
 
