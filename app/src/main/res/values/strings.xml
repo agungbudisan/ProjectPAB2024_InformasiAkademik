@@ -107,6 +107,7 @@
     <string name="nominal_bayar">NOMINAL BAYAR</string>
     <string name="lihat_detail">Lihat Detail</string>
     <string name="informasi_akademik">INFORMASI AKADEMIK</string>
+    <string name="jumlah_pembayaran_per_fakultas">JUMLAH PEMBAYARAN PER FAKULTAS</string>
 
     <string-array name="data_title">
         <item>APLIKASI INFORMASI AKADEMIK</item>
@@ -151,6 +152,25 @@
 
     <string-array name="fakultas">
         <item>All</item>
+        <item>SV</item>
+        <item>FH</item>
+        <item>FT</item>
+        <item>Fapsi</item>
+        <item>FP</item>
+        <item>Fapet</item>
+        <item>FK</item>
+        <item>FIB</item>
+        <item>FKOR</item>
+        <item>FEB</item>
+        <item>FISIP</item>
+        <item>FSRD</item>
+        <item>FKIP</item>
+        <item>Fatisda</item>
+        <item>FMIPA</item>
+        <item>Pascasarjana</item>
+    </string-array>
+
+    <string-array name="fakultas_list">
         <item>SV</item>
         <item>FH</item>
         <item>FT</item>
