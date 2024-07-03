@@ -18,10 +18,11 @@
         <activity
             android:name=".ui.detail.MahasiswaKurangMampuActivity"
             android:exported="false" /> <!-- <activity -->
-        <!-- android:name=".ui.mahasiswaaktif.MahasiswaAktifActivity" -->
-        <!-- android:exported="false" /> -->
         <activity
             android:name=".ui.detail.AnalisisPembayaranActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.detail.MahasiswaAktifActivity"
             android:exported="false" />
         <activity
             android:name=".ui.detail.KeketatanDetailActivity"
