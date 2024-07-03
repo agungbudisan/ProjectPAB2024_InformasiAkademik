@@ -8,11 +8,15 @@
     tools:context=".ui.home.HomeFragment">
 
     <ImageView
-        android:layout_width="98sp"
-        android:layout_height="56sp"
-        android:layout_marginStart="27sp"
+        android:id="@+id/imageViewLogo"
+        android:layout_width="95dp"
+        android:layout_height="53dp"
+        android:contentDescription="@string/logo"
         android:src="@drawable/logo"
-        android:contentDescription="@string/logo" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_home"
