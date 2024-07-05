@@ -20,8 +20,8 @@
     <string name="nilai_akademik_title">PERSENTASE NILAI AKADEMIK</string>
     <string name="data_pembayaran">DATA REKAPITULASI PEMBAYARAN MAHASISWA</string>
     <string name="jumlah_pembayaran">JUMLAH PEMBAYARAN MAHASISWA</string>
-    <string name="data_semester">GRAFIK RATA-RATA 10 SEMESTER TERAKHIR</string>
-    <string name="data_ipk">PERSENTASE RATA-RATA IPK 10 SEMESTER TERAKHIR</string>
+    <string name="data_semester">GRAFIK RATA-RATA IPK 10 SEMESTER TERAKHIR</string>
+    <string name="data_ipk">PERSENTASE JUMLAH IPK 10 SEMESTER TERAKHIR</string>
     <string name="btn_ace">AEE</string>
     <string name="no">NO.</string>
     <string name="program_studi">PROGRAM STUDI</string>
@@ -191,11 +191,22 @@
 
     <string-array name="semester">
         <item>All</item>
-        <item>2019 s/d 2024</item>
-        <item>2014 s/d 2019</item>
-        <item>2009 s/d 2014</item>
-        <item>2004 s/d 2009</item>
-        <item>1999 s/d 2004</item>
+        <item>SV</item>
+        <item>FH</item>
+        <item>FT</item>
+        <item>Fapsi</item>
+        <item>FP</item>
+        <item>Fapet</item>
+        <item>FK</item>
+        <item>FIB</item>
+        <item>FKOR</item>
+        <item>FEB</item>
+        <item>FISIP</item>
+        <item>FSRD</item>
+        <item>FKIP</item>
+        <item>Fatisda</item>
+        <item>FMIPA</item>
+        <item>Pascasarjana</item>
     </string-array>
 
     <!--    <string-array name="data_name">-->
