@@ -192,10 +192,10 @@ class KeketatanDetailActivity : AppCompatActivity() {
                     val registered = data.child("reg").getValue(Long::class.java) ?: 0L
 
                     entriesAccepted.add(BarEntry(index, accepted.toFloat()))
-                    entriesRegistered.add(BarEntry(index, registered.toFloat()))
+                    entriesRegistered.add(BarEntry(index + 0.60f, registered.toFloat()))
                     labels.add(data.key ?: "Unknown")
                     Log.d("DetailKeketatan", "Year: ${data.key}, Accepted: $accepted, Registered: $registered")
-                    index += 1f
+                    index += 1.2f
                 }
 
                 if (entriesAccepted.isEmpty() || entriesRegistered.isEmpty()) {
@@ -210,12 +210,12 @@ class KeketatanDetailActivity : AppCompatActivity() {
                 barDataSetRegistered.color = resources.getColor(R.color.blue) // Set color for registered bars
 
                 val barData = BarData(barDataSetAccepted, barDataSetRegistered)
-                barData.barWidth = 0.45f // Set bar width
+                barData.barWidth = 0.4f // Set bar width
 
                 barChart.data = barData
 
-                val groupSpace = 0.08f
-                val barSpace = 0.03f
+                val groupSpace = 0.1f
+                val barSpace = 0.05f
                 barChart.barData.groupBars(0f, groupSpace, barSpace) // Group the bars
 
                 val xAxis = barChart.xAxis
@@ -227,6 +227,8 @@ class KeketatanDetailActivity : AppCompatActivity() {
 
                 val leftAxis = barChart.axisLeft
                 leftAxis.setDrawGridLines(false)
+
+                barChart.animateY(1500)
 
                 val rightAxis = barChart.axisRight
                 rightAxis.setDrawGridLines(false)

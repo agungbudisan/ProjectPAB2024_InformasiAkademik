@@ -25,7 +25,7 @@
         android:background="@drawable/rounded_background"
         android:gravity="center"
         android:padding="16dp"
-        android:text="@string/analisis_pembayaran_title"
+        android:text="@string/analisis_keketatan_mahasiswa"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -60,7 +60,7 @@
         android:background="@drawable/rounded_orange_background"
         android:gravity="center"
         android:padding="8dp"
-        android:text="@string/data_pembayaran"
+        android:text="@string/data_rekapitulasi_keketatan_mahasiswa"
         android:textColor="@android:color/white"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -102,7 +102,6 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"/>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

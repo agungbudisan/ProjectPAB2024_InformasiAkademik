@@ -108,6 +108,8 @@
     <string name="lihat_detail">Lihat Detail</string>
     <string name="informasi_akademik">INFORMASI AKADEMIK</string>
     <string name="jumlah_pembayaran_per_fakultas">JUMLAH PEMBAYARAN PER FAKULTAS</string>
+    <string name="analisis_keketatan_mahasiswa">ANALISIS KEKETATAN MAHASISWA</string>
+    <string name="data_rekapitulasi_keketatan_mahasiswa">DATA REKAPITULASI KEKETATAN MAHASISWA</string>
 
     <string-array name="data_title">
         <item>APLIKASI INFORMASI AKADEMIK</item>
