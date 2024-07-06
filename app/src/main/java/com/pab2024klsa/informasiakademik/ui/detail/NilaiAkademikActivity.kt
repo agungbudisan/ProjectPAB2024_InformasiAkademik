@@ -57,14 +57,19 @@ class NilaiAkademikActivity : AppCompatActivity() {
     private fun loadChartData(semester: String) {
         databaseNilai.child(semester).addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                Log.d("NilaiAkademik", "Data received from Firebase for semester in: $semester")
+                Log.d("NilaiAkademik", "Data received from Firebase for semester: $semester")
 
                 val entries = ArrayList<BarEntry>()
                 val labels = ArrayList<String>()
 
                 var index = 0f
                 for (data in snapshot.children) {
-                    val value = data.getValue(Long::class.java) ?: 0L
+                    val value = when (data.value) {
+                        is Double -> data.getValue(Double::class.java) ?: 0.0
+                        is Long -> (data.getValue(Long::class.java) ?: 0L).toDouble()
+                        else -> (data.getValue(String::class.java) ?: "0.0").toDoubleOrNull() ?: 0.0
+                    }
+
                     entries.add(BarEntry(index, value.toFloat()))
                     labels.add(data.key ?: "Unknown")
                     Log.d("NilaiAkademik", "Key: ${data.key}, Value: $value")
@@ -72,7 +77,7 @@ class NilaiAkademikActivity : AppCompatActivity() {
                 }
 
                 if (entries.isEmpty()) {
-                    Log.w("NilaiAkademik", "No data entries found for semester in: $semester")
+                    Log.w("NilaiAkademik", "No data entries found for semester: $semester")
                     barChart.clear()
                     barChart.invalidate()
                     return
@@ -97,7 +102,7 @@ class NilaiAkademikActivity : AppCompatActivity() {
                 barChart.description.isEnabled = false
                 barChart.animateY(1000)
                 barChart.invalidate() // refresh chart
-                Log.d("NilaiAkademik", "Chart data set successfully for semester in: $semester")
+                Log.d("NilaiAkademik", "Chart data set successfully for semester: $semester")
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -107,14 +112,19 @@ class NilaiAkademikActivity : AppCompatActivity() {
 
         databasePersentase.child(semester).addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                Log.d("PersentaseNilaiAkademik", "Data received from Firebase for semester in: $semester")
+                Log.d("PersentaseNilaiAkademik", "Data received from Firebase for semester: $semester")
 
                 val entries = ArrayList<BarEntry>()
                 val labels = ArrayList<String>()
 
                 var index = 0f
                 for (data in snapshot.children) {
-                    val value = data.getValue(Long::class.java) ?: 0L
+                    val value = when (data.value) {
+                        is Double -> data.getValue(Double::class.java) ?: 0.0
+                        is Long -> (data.getValue(Long::class.java) ?: 0L).toDouble()
+                        else -> (data.getValue(String::class.java) ?: "0.0").toDoubleOrNull() ?: 0.0
+                    }
+
                     entries.add(BarEntry(index, value.toFloat()))
                     labels.add(data.key ?: "Unknown")
                     Log.d("PersentaseNilaiAkademik", "Key: ${data.key}, Value: $value")
@@ -122,7 +132,7 @@ class NilaiAkademikActivity : AppCompatActivity() {
                 }
 
                 if (entries.isEmpty()) {
-                    Log.w("PersentaseNilaiAkademik", "No data entries found for semester in: $semester")
+                    Log.w("PersentaseNilaiAkademik", "No data entries found for semester: $semester")
                     graphIPK.clear()
                     graphIPK.invalidate()
                     return
@@ -147,7 +157,7 @@ class NilaiAkademikActivity : AppCompatActivity() {
                 graphIPK.description.isEnabled = false
                 graphIPK.animateY(1000)
                 graphIPK.invalidate() // refresh chart
-                Log.d("PersentaseNilaiAkademik", "Chart data set successfully for semester in: $semester")
+                Log.d("PersentaseNilaiAkademik", "Chart data set successfully for semester: $semester")
             }
 
             override fun onCancelled(error: DatabaseError) {
