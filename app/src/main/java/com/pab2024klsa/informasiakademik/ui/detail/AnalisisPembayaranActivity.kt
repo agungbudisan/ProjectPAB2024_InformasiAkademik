@@ -86,7 +86,7 @@ class AnalisisPembayaranActivity : AppCompatActivity() {
                     return
                 }
 
-                val barDataSet = BarDataSet(entries, "Pembayaran")
+                val barDataSet = BarDataSet(entries, "Nominal Pembayaran (Rp)")
                 val barData = BarData(barDataSet)
                 barChart.data = barData
 
